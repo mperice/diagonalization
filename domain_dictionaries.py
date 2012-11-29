@@ -1,21 +1,24 @@
 __author__ = 'matic'
-import os
-
+import os,re
 
 #replaces all keys from dict with its' values
 def replace_all(text, dic):
-    for i, j in dic.iteritems():
-        text = text.replace(i, j)
+    for i, j in sorted(dic.iteritems(),key=lambda a: len(a[0].split(" ")),reverse=True):
+        #print i
+        text = re.sub(r'(?i)\b'+i+r'\b', j, text)#text.replace(i, j)
     return text
 
 def count(file_name, dic):
-    fajl=open(file_name+".lndoc", 'r')
+    file_name=file_name.split(".")[0]
+    fajl=open(file_name+".txt", 'r')
     line = fajl.readline()
     cnt=0
     while line:
         if line!="\n":
             for word in dic.keys():
-                cnt+=line.count(word)
+                a=line.count(word)
+                #print word,a
+                cnt+=a
 
         line = fajl.readline()
     fajl.close()
@@ -23,7 +26,7 @@ def count(file_name, dic):
 
 
 def use_domain_dictionary(file_name,dictionaries_path):
-
+    file_name=file_name.split(".")[0]
     dictionary={}
     dict_names=os.listdir(dictionaries_path)
 
@@ -38,7 +41,7 @@ def use_domain_dictionary(file_name,dictionaries_path):
                 #spl=line.split("\t")
                 #print dict_name
 
-                terms=line.split("\n")[0].split(",")
+                terms=line.replace("_"," ").replace("\n ","\n").split("\n")[0].replace("  "," ").replace("  "," ").replace(", ",",").split(",")
                 first_term=terms[0]
                 for term in terms:
                     dictionary[term]=first_term
@@ -48,8 +51,8 @@ def use_domain_dictionary(file_name,dictionaries_path):
     print dictionary
 
 
-    fajl=open(file_name+".lndoc", 'r')
-    new_fajl=open(file_name+"_dict.lndoc", 'w')
+    fajl=open(file_name+".txt", 'r')
+    new_fajl=open(file_name+"_dict.txt", 'w')
 
     line = fajl.readline()    # Invokes readline() method on file
 
@@ -62,7 +65,7 @@ def use_domain_dictionary(file_name,dictionaries_path):
     fajl.close()
     new_fajl.close()
 
-    print count(file_name+"_dict.lndoc",dictionary)
+    print count(file_name+"_dict.txt",dictionary)
 
-use_domain_dictionary("pdr","dictionaries")
+#use_domain_dictionary("pdr","dictionaries")
 

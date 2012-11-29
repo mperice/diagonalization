@@ -91,35 +91,3 @@ def generate_ideal(prefix,words_per_doc,corpus_per_cluster,percentage=0.01):
 #generate_ideal(15,20)
 
 
-def kenyan_elections_generate(prefix):
-    word_score=defaultdict(float)
-    #ROW ORDERING
-    file_path=prefix+"kenyan/KenyanData/TekstiLO/"
-
-    output_file=open(prefix+"kenyan/documents.txt",'wb')
-    for i in range(1,232):
-        file=open(file_path+"LO_sym_"+str(i)+".txt", 'r')
-        line = file.readline()
-        doc_text=""
-        while line:
-            if line!="\n":# and i%5==0:
-                doc_text+=line
-            line = file.readline()
-        file.close()
-        output_file.write(str(i)+"\t!LO\t"+doc_text+"\n")
-
-    file_path=prefix+"kenyan/KenyanData/TekstiWE/"
-
-    for i in range(1,232):
-        file=open(file_path+"WE_sym_"+str(i)+".txt", 'r')
-        line = file.readline()
-        doc_text=""
-        while line:
-            if line!="\n":# and i%5==0:
-                doc_text+=line
-            line = file.readline()
-        file.close()
-        output_file.write(str(i+231)+"\t!WE\t"+doc_text+"\n")
-    output_file.close()
-
-#kenyan_elections_generate()

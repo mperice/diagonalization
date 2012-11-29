@@ -9,7 +9,7 @@ from diagonalization_helpers import *
 from pyroc import ROCData,plot_multiple_roc
 import random
 
-prefix="D:/diagonalization/"
+prefix="D:/diagonalization/" if os.getenv('COMPUTERNAME')=="PORFAVOR-PC" else "/home/matic/"
 
 
 sell=sys.argv[1]
@@ -33,6 +33,9 @@ elif sell=="kenyan":
 elif sell=="pdr_rxp":
     prefix+="pdr_rxp/"
     classes=["PDR","RXP"]
+elif sell=="et_sa":
+    prefix+="et_sa/"
+    classes=["ET","SA"]
 elif sell=="pdr_rxp_small":
     prefix+="pdr_rxp_small/"
     classes=["PDR","RXP"]

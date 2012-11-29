@@ -36,7 +36,7 @@ def get_permutations(prefix,filename="temp.dat"):
         #-----------------CREATE BANDED BINARY MATRIX-----------------
     print "creating banded binary matrix aaa"
     os.chdir(prefix)
-    os.system(r""+"diag 1 34 1 11 < "+filename)
+    os.system(("" if os.getenv('COMPUTERNAME')=="PORFAVOR-PC" else "./")+"diag 1 34 1 11 < "+filename)
 
     col_perm_rev={} #permutation of columns      #{0: 151 } na nictem mestu je 151. beseda
     row_perm_rev={} #permutation of rows

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20a10aa3-8df3-46ce-adab-a0dbc668cfee" name="Default" comment="" />
+    <list default="true" id="20a10aa3-8df3-46ce-adab-a0dbc668cfee" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/domains_from_file.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/domains_from_pubmed.py" />
+      <change type="DELETED" beforePath="C:\Users\matic\workspace\diagonalization\dictionaries\ET_slovar.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\matic\workspace\diagonalization\dictionaries\SA_slovar.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\matic\workspace\diagonalization\read_from_pubmed.py" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\matic\workspace\diagonalization\use_domain_dictionaries.py" afterPath="$PROJECT_DIR$/domain_dictionaries.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_ideal_world.py" afterPath="$PROJECT_DIR$/create_ideal_world.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagonalization.py" afterPath="$PROJECT_DIR$/diagonalization.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagonalization_helpers.py" afterPath="$PROJECT_DIR$/diagonalization_helpers.py" />
+    </list>
     <ignored path="diagonalization.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,16 +40,16 @@
       <file leaf-file-name="diagonalization.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diagonalization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
+            <state line="11" column="91" selection-start="349" selection-end="349" vertical-scroll-proportion="-2.16">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="use_domain_dictionaries.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use_domain_dictionaries.py">
+      <file leaf-file-name="domain_dictionaries.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/domain_dictionaries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="26" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0">
+            <state line="7" column="28" selection-start="239" selection-end="243" vertical-scroll-proportion="0.19832109">
               <folding />
             </state>
           </provider>
@@ -46,25 +58,16 @@
       <file leaf-file-name="diagonalization_helpers.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diagonalization_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="0" selection-start="3951" selection-end="3975" vertical-scroll-proportion="0.0">
+            <state line="38" column="18" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="picker.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="picker.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/picker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="9" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.35889572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dddd.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dddd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="13" selection-start="2454" selection-end="2459" vertical-scroll-proportion="0.0">
+            <state line="92" column="0" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,8 +76,10 @@
       <file leaf-file-name="create_ideal_world.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/create_ideal_world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="4" selection-start="224" selection-end="897" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="6" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#52#72#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,10 +93,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_from_pubmed.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/read_from_pubmed.py">
+      <file leaf-file-name="domains_from_file.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domains_from_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="19" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+            <state line="34" column="18" selection-start="1389" selection-end="1394" vertical-scroll-proportion="-23.52">
+              <folding>
+                <element signature="e#23#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="domains_from_pubmed.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domains_from_pubmed.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="27" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_random.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/create_random.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,20 +138,25 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/create_ideal_world.py" />
         <option value="$PROJECT_DIR$/create_random.py" />
         <option value="$PROJECT_DIR$/hevristic_functions.py" />
-        <option value="$PROJECT_DIR$/diagonalization_helpers.py" />
         <option value="C:/Python27/Lib/site-packages/matplotlib/figure.py" />
         <option value="$PROJECT_DIR$/dddd.py" />
         <option value="$PROJECT_DIR$/picker.py" />
         <option value="$PROJECT_DIR$/pyroc.py" />
-        <option value="$PROJECT_DIR$/diagonalization.py" />
         <option value="$PROJECT_DIR$/read_from_pubmed.py" />
         <option value="$PROJECT_DIR$/use_domain_dictionaries.py" />
+        <option value="$PROJECT_DIR$/create_ideal_world.py" />
+        <option value="$PROJECT_DIR$/diagonalization_helpers.py" />
+        <option value="$PROJECT_DIR$/diagonalization.py" />
+        <option value="$PROJECT_DIR$/domains_from_file.py" />
+        <option value="$PROJECT_DIR$/domain_dictionaries.py" />
       </list>
     </option>
   </component>
@@ -136,7 +166,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -168,90 +198,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="diagonalization" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.2 (C:/Python27/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagonalization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.2 (C:/Python27/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagonalization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.2 (C:/Python27/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matplotlib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagonalization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.2 (C:/Python27/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagonalization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.2 (C:/Python27/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Python27" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -305,8 +251,8 @@
       <recent name="C:\Users\matic\workspace\diagonalization" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.use_domain_dictionaries">
-    <configuration default="false" name="create_ideal_world" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.domains_from_file">
+    <configuration default="false" name="domains_from_pubmed" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -317,24 +263,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <module name="diagonalization" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_ideal_world.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="read_from_pubmed" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="diagonalization" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/read_from_pubmed.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\matic\workspace\diagonalization\domains_from_pubmed.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -378,7 +307,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="use_domain_dictionaries" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="domain_dictionaries" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -389,7 +318,24 @@
       <option name="IS_MODULE_SDK" value="true" />
       <module name="diagonalization" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/use_domain_dictionaries.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\matic\workspace\diagonalization\domain_dictionaries.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="domains_from_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="diagonalization" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/domains_from_file.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -517,24 +463,42 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Python.create_ideal_world" />
-      <item index="1" class="java.lang.String" itemvalue="Python.read_from_pubmed" />
-      <item index="2" class="java.lang.String" itemvalue="Python.picker" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dddd" />
-      <item index="4" class="java.lang.String" itemvalue="Python.use_domain_dictionaries" />
-      <item index="5" class="java.lang.String" itemvalue="Python.diagonalization, small" />
-      <item index="6" class="java.lang.String" itemvalue="Python.diagonalization, pdr_rxp" />
-      <item index="7" class="java.lang.String" itemvalue="Python.diagonalization, ideal_toy" />
-      <item index="8" class="java.lang.String" itemvalue="Python.diagonalization, pdr_rxp_small" />
+    <configuration default="false" name="diagonalization, et_sa" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="diagonalization" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diagonalization.py" />
+      <option name="PARAMETERS" value="et_sa" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="10">
+      <item index="0" class="java.lang.String" itemvalue="Python.diagonalization, small" />
+      <item index="1" class="java.lang.String" itemvalue="Python.diagonalization, pdr_rxp" />
+      <item index="2" class="java.lang.String" itemvalue="Python.diagonalization, ideal_toy" />
+      <item index="3" class="java.lang.String" itemvalue="Python.diagonalization, pdr_rxp_small" />
+      <item index="4" class="java.lang.String" itemvalue="Python.domains_from_pubmed" />
+      <item index="5" class="java.lang.String" itemvalue="Python.picker" />
+      <item index="6" class="java.lang.String" itemvalue="Python.dddd" />
+      <item index="7" class="java.lang.String" itemvalue="Python.domain_dictionaries" />
+      <item index="8" class="java.lang.String" itemvalue="Python.domains_from_file" />
+      <item index="9" class="java.lang.String" itemvalue="Python.diagonalization, et_sa" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.use_domain_dictionaries" />
-        <item index="1" class="java.lang.String" itemvalue="Python.read_from_pubmed" />
-        <item index="2" class="java.lang.String" itemvalue="Python.picker" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dddd" />
-        <item index="4" class="java.lang.String" itemvalue="Python.create_ideal_world" />
+        <item index="0" class="java.lang.String" itemvalue="Python.domains_from_file" />
+        <item index="1" class="java.lang.String" itemvalue="Python.domain_dictionaries" />
+        <item index="2" class="java.lang.String" itemvalue="Python.domains_from_pubmed" />
+        <item index="3" class="java.lang.String" itemvalue="Python.picker" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dddd" />
       </list>
     </recent_temporary>
   </component>
@@ -592,12 +556,12 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297244" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67027557" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13607258" sideWeight="0.5098425" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13607258" sideWeight="0.48720473" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13607258" sideWeight="0.38976377" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3996063" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13607258" sideWeight="0.60334647" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49015749" sideWeight="0.9903949" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24704725" sideWeight="0.9992487" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -659,27 +623,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/read_hevristic_scores.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/transforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1416" column="37" selection-start="46876" selection-end="46876" vertical-scroll-proportion="0.25126135" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/axes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="835" column="8" selection-start="30262" selection-end="30262" vertical-scroll-proportion="0.33299696" />
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/matplotlib/backend_bases.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1242" column="17" selection-start="39345" selection-end="39345" vertical-scroll-proportion="0.8234107" />
@@ -712,23 +659,9 @@
         <state line="118" column="39" selection-start="3892" selection-end="3892" vertical-scroll-proportion="0.38854805" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diagonalization_helpers.py">
+    <entry file="file://$PROJECT_DIR$/picker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="0" selection-start="3951" selection-end="3975" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagonalization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read_from_pubmed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+        <state line="92" column="0" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -740,23 +673,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/create_toy_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domains_from_pubmed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="27" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domains_from_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="18" selection-start="1389" selection-end="1394" vertical-scroll-proportion="-23.52">
+          <folding>
+            <element signature="e#23#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagonalization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="91" selection-start="349" selection-end="349" vertical-scroll-proportion="-2.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagonalization_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="18" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/create_ideal_world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="224" selection-end="897" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="6" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#52#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/use_domain_dictionaries.py">
+    <entry file="file://$PROJECT_DIR$/domain_dictionaries.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="26" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/picker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="9" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.35889572">
+        <state line="7" column="28" selection-start="239" selection-end="243" vertical-scroll-proportion="0.19832109">
           <folding />
         </state>
       </provider>
