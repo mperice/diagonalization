@@ -15,6 +15,7 @@ def generate_from_files(prefix,domainA,klassA,domainC,klassC,ouput_file_name,dic
     interestion= file_namesA.intersection(file_namesC)
     generate_for_one_domain(prefix,domainA,klassA,interestion,filename)
     generate_for_one_domain(prefix,domainC,klassC,interestion,filename)
+    print interestion
 
     if dictionary_dir:
         use_domain_dictionary(filename,prefix+"/"+dictionary_dir)
@@ -40,4 +41,4 @@ def generate_for_one_domain(prefix,dir_name,klass,file_name_not_in,full_output_f
 
 
 #generate_from_files("D:/diagonalization/kenyan/KenyanData/","TekstiLO","LO","TekstiWE","WE","kenyan.txt")
-generate_from_files("D:/diagonalization/et_sa","ET publications","ET","SA publications","SA","documents.txt","dictionaries")
+#generate_from_files("D:/diagonalization/et_sa_abstracts","ET publications","ET","SA publications","SA","documents.txt","dictionaries")

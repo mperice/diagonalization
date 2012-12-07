@@ -7,6 +7,10 @@ from create_random import generate_random
 from create_ideal_world import *
 from diagonalization_helpers import *
 from pyroc import ROCData,plot_multiple_roc
+from domain_outliers import find_domain_outliers
+from domains_from_pubmed import abstracts_for_terms
+from domains_from_file import generate_from_files
+from domain_dictionaries import use_domain_dictionary
 import random
 
 prefix="D:/diagonalization/" if os.getenv('COMPUTERNAME')=="PORFAVOR-PC" else "/home/matic/"
@@ -35,6 +39,12 @@ elif sell=="pdr_rxp":
     classes=["PDR","RXP"]
 elif sell=="et_sa":
     prefix+="et_sa/"
+    generate_from_files(prefix,"ET publications","ET","SA publications","SA","documents.txt","dictionaries")
+    classes=["ET","SA"]
+elif sell=="et_sa_abstracts":
+    prefix+="et_sa_abstracts/"
+    #abstracts_for_terms(prefix+"document_raw.txt",term1="(\"Arabidopsis\" OR \"Oryza\" OR \"Solanum\" OR \"Nicotiana\" OR \"plant\") AND ( \"salicylate\" OR \"salicylic acid\")",klass1="SA",term2="(\"Arabidopsis\" OR \"Oryza\" OR \"Solanum\" OR \"Nicotiana\" OR \"plant\") AND (\"ethylene\")",klass2="ET")
+    #use_domain_dictionary(prefix+"document_raw.txt",prefix+"dictionaries")
     classes=["ET","SA"]
 elif sell=="pdr_rxp_small":
     prefix+="pdr_rxp_small/"
@@ -226,4 +236,7 @@ for i,roc in enumerate(roc_data):
     print labels[i],"AUC:\t"+str(roc.auc())
 fille.close()
 
-plot_multiple_roc(roc_data,'B-term ROC Curves, DB:'+sell,include_baseline=True,labels=labels,file_name=sell)
+#plot_multiple_roc(roc_data,'B-term ROC Curves, DB:'+sell,include_baseline=True,labels=labels,file_name=sell)
+
+#trains_class[0]="MAG"
+print find_domain_outliers(prefix,trains_class)

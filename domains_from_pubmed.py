@@ -1,13 +1,17 @@
 __author__ = 'matic'
-
-filename="D:/diagonalization/pdr_rxp/documents.txt"
-open(filename, "w").close()
 from Bio import Entrez,Medline
-Entrez.email = "mperice@gmail.com"     # Always tell NCBI who you are
 
-def abstracts_for_term(term="Opuntia[ORGN]",klass="OPU",initial_i=0,limit=10000000000):
-    global filename
-    search_results = Entrez.read(Entrez.esearch(db="pubmed", term=term,reldate=365*4, datetype="pdat",  usehistory="y"))
+def abstracts_for_terms(filename,term1,klass1,term2,klass2,last_x_years=8,limit=10000000000):
+    #filename="D:/diagonalization/et_sa/abstracts.txt"
+    open(filename, "w").close()
+    Entrez.email = "mperice@gmail.com"     # Always tell NCBI who you are
+
+    #abstracts_for_term(term="(\"Arabidopsis\" OR \"Oryza\" OR \"Solanum\" OR \"Nicotiana\" OR \"plant\") AND (\"signalling\" OR \"signaling\" OR \"defence\" OR \"defense\" OR \"ethylene\" OR \"jasmonate\" OR \"jasmonic acid\" OR \"salicylate\" OR \"salicylic acid\" OR \"pathogen\" OR \"virus\")",klass="PDR",initial_i=abstracts_for_term("(redox OR reduction OR oxidation) AND (potential OR state)","RXP"))
+    abstracts_for_term(filename,term=term1,klass=klass1,initial_i=abstracts_for_term(filename,term2,klass2,last_x_years=last_x_years,limit=limit),last_x_years=last_x_years,limit=limit)
+    #abstracts_for_term(term="\"salicylic acid\" AND ethylene AND \"arabidopsis thaliana\"",klass="inters",initial_i=3289)
+
+def abstracts_for_term(filename,term,klass,initial_i=0,last_x_years=80,limit=10000000000):
+    search_results = Entrez.read(Entrez.esearch(db="pubmed", term=term,reldate=365*last_x_years, datetype="pdat",  usehistory="y"))
     count = min([int(search_results["Count"]),limit])
     print "Found %i results" % count
 
@@ -30,5 +34,3 @@ def abstracts_for_term(term="Opuntia[ORGN]",klass="OPU",initial_i=0,limit=100000
                 out_handle.write(str(i+initial_i+start+1)+"\t!"+klass+"\t"+record["AB"]+"\n")
     out_handle.close()
     return count
-
-abstracts_for_term(term="(\"Arabidopsis\" OR \"Oryza\" OR \"Solanum\" OR \"Nicotiana\" OR \"plant\") AND (\"signalling\" OR \"signaling\" OR \"defence\" OR \"defense\" OR \"ethylene\" OR \"jasmonate\" OR \"jasmonic acid\" OR \"salicylate\" OR \"salicylic acid\" OR \"pathogen\" OR \"virus\")",klass="PDR",initial_i=abstracts_for_term("(redox OR reduction OR oxidation) AND (potential OR state)","RXP"))
