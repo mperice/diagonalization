@@ -64,9 +64,9 @@ the specified epsilon tolerance)
 The examples below illustrate each of these methods.
 """
 
-from matplotlib.pyplot import figure, show,text,draw,plot,cla,gca,get_current_fig_manager
+from matplotlib.pyplot import figure, show,text,draw,plot,cla,gca,get_current_fig_manager,axis
 from matplotlib.lines import Line2D
-from matplotlib.patches import Rectangle
+from matplotlib.patches import Rectangle,Circle
 from matplotlib.text import Text
 from matplotlib.image import AxesImage
 import numpy as np
@@ -75,6 +75,9 @@ import string
 
 
 
+prefix="D:/diagonalization/et_sa_abstracts/"
+prefix="D:/diagonalization/whatif/"
+prefix="D:/diagonalization/fact_aesop/"
 prefix="D:/diagonalization/ideal_toy/"
 
 selected_inds=set([])
@@ -98,21 +101,57 @@ ex_classes=[]
 words=[]
 colors=[]
 documents=[]
+doc_outliers=[]
 domains=[]
+bterms=[]
+crossbee=[]
 fig = figure(figsize=(6*3.13,4*3.13))
-ax1 = fig.add_subplot(111)
-
+#ax2 = fig.add_subplot(111)
+ax1 = fig.add_subplot(111)#ax2.twinx()#fig.add_subplot(111)
+#ax3 = ax2.twinx()#fig.add_subplot(111)
+axis([0.0,0,800,800])
+ax1 =gca()
+ax1.set_autoscale_on(False)
 ex_properties=""
 
 def redraw(hide=False):
-    global fig,ax1,xs,ys,colors,selected_inds,ex_properties
-    cla()
+    global fig,ax1,xs,ys,colors,selected_inds,ex_properties,crossbee
+    #ax2.cla()
+    ax1.cla();
+    #ax3.cla()
+
+    max_x=max(xs)
+    max_y=max(ys)
+
+    print len(bterms)
+#    for j in bterms:
+#        p = Rectangle([j+2,0], 3,max_y+3, facecolor="green", edgecolor="green")
+#        ax1.add_patch(p)
+
+    for j,alpha in crossbee:
+        p = Rectangle([j+2,0], 3,max_y+3, facecolor="yellow", edgecolor="yellow",alpha=alpha)
+        ax1.add_patch(p);
+    for i in doc_outliers:
+        p = Rectangle([0,i-5], max_x+3, 3, facecolor="orange", edgecolor="orange",alpha=0.8)
+        ax1.add_patch(p);
 
 
-    col = ax1.scatter([xs[i] for i in selected_inds]+[-30],[ys[i] for i in selected_inds]+[-30],s=70,c='r', picker=1)
-    col2 = ax1.scatter(xs,ys,c=colors, picker=1)
+    for i,x in enumerate(xs):
+        if i%1==0:
+            p = Circle([x,ys[i]],3, color=colors[i] )
+            ax1.add_patch(p)
+
+    for i in selected_inds:
+        p = Circle([xs[i],ys[i]],5, color="black" )
+        ax1.add_patch(p)
+        p = Circle([xs[i],ys[i]],3, color=colors[i] )
+        ax1.add_patch(p);
+    col = ax1.scatter([xs[i] for i in selected_inds]+[-30],[ys[i] for i in selected_inds]+[-30],s=70,c='black', picker=1)
+    #col2 = ax1.scatter(xs,ys,c=colors, picker=1)
     if not hide:
         print "Risem vse ..."
+
+
 
     #print ax1.points
     #fig.savefig('pscoll.eps')
@@ -122,9 +161,9 @@ def redraw(hide=False):
     bbox_props = dict(boxstyle="round", fc="w", ec="0.5", alpha=0.9)
     aa=ax1.text(-100, -100, ex_properties, size=12, bbox=bbox_props)
     aa.set_family("monospace")
-    fig.canvas.draw()
+    fig.canvas.draw();
     if not hide:
-        fig.canvas.mpl_connect('button_press_event', onpick3)
+        fig.canvas.mpl_connect('button_press_event', onpick3);
 
     print ex_properties
 # plot()
@@ -152,12 +191,18 @@ while line:
             words.append(word)
             ex_classes.append(ex_class)
             documents.append(document)
-            colors.append('b' if ex_class=="1" else 'g')
+            colors.append('b' if ex_class=="1" else 'r')
             domains.append(domain+" |%2s %2s|" % (greens_per_word,blues_per_word))
         elif spl[0]=="CS":
             _,j,color=spl
+            crossbee.append([int(j),float(color)])
+        elif spl[0]=="DOCOUT":
+            _,i=spl
+            doc_outliers.append(int(i))
         else: #BTERM
+            print spl
             _,j,b_term=spl
+            bterms.append(int(j))
 
 
         #print i,spl[0]
@@ -203,7 +248,7 @@ def onpick3(event):
 #fig = figure()
 #ax1 = fig.add_subplot(111)
 
-redraw()
+redraw();
 
 show()
 #

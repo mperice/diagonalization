@@ -5,8 +5,13 @@ import os,re
 def replace_all(text, dic):
     for i, j in sorted(dic.iteritems(),key=lambda a: len(a[0].split(" ")),reverse=True):
         #print i
-        text = re.sub(r'(?i)\b'+i+r'\b', j, text)#text.replace(i, j)
-    return text
+        i=i.replace("[","\[").replace("]","\]").replace("(","\(").replace(")","\)").replace(".","\.").replace("'","\'")
+        rxstr=r'(?:(?<=\s)|(?<=^))'+i+r'(?=\s|$)'
+        count=len(re.findall(rxstr, text))
+        #print i
+        #text = re.sub(r'(?i)\b'+i+r'\b', j, text)#text.replace(i, j)
+        text = re.sub(rxstr, j, text)
+    return text,count
 
 def count(file_name, dic):
     file_name=file_name.split(".")[0]
@@ -40,9 +45,11 @@ def use_domain_dictionary(file_name,dictionaries_path):
             if line!="\n":
                 #spl=line.split("\t")
                 #print dict_name
-
+                #print dict_name
                 terms=line.replace("_"," ").replace("\n ","\n").split("\n")[0].replace("  "," ").replace("  "," ").replace(", ",",").split(",")
+                terms=[asd for asd in terms if asd!=""]
                 first_term=terms[0]
+
                 for term in terms:
                     dictionary[term]=first_term
             line = fajl.readline()
@@ -50,22 +57,29 @@ def use_domain_dictionary(file_name,dictionaries_path):
         fajl.close()
     print dictionary
 
+    bterms_fajl=open(file_name+"_dict_keys.txt", 'w')
+    for bterm in set(dictionary.values()):
+        bterms_fajl.write(bterm+",")
+    bterms_fajl.close()
+
 
     fajl=open(file_name+".txt", 'r')
     new_fajl=open(file_name+"_dict.txt", 'w')
 
     line = fajl.readline()    # Invokes readline() method on file
-
+    count=0
     while line:
         if line!="\n":
             lod=line.split("\n")[0]
-            new_fajl.write(replace_all(lod,dictionary)+"\n")
+            replaced,countt=replace_all(lod,dictionary)
+            new_fajl.write(replaced+"\n")
+            count+=countt
         line = fajl.readline()
         #print "row_perm:",row_perm_rev
     fajl.close()
     new_fajl.close()
 
-    print count(file_name+"_dict.txt",dictionary)
+    print count#(file_name+"_dict.txt",dictionary)
 
 #use_domain_dictionary("pdr","dictionaries")
 

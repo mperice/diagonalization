@@ -122,7 +122,7 @@ def draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_p
     #im.show()
     
 import string
-def generate_js_file(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,trains_class,trains_text,prefix,b_terms,greens_per_word,blues_per_word,classes,col_perm_rev_inv=False,col_perm_inv=False):
+def generate_js_file(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,trains_class,trains_text,prefix,b_terms,greens_per_word,blues_per_word,classes,col_perm_rev_inv=False,col_perm_inv=False,domain_outliers=[]):
     
     outfile=open(prefix+"redpin/points.js","wb")
     outfile_py=open(prefix+"redpin/points.txt","wb")
@@ -148,8 +148,18 @@ def generate_js_file(sorted_words,jursic_word_score,max_word_score,col_perm_rev,
         w=1. if word in b_terms else 0.
         new_j=col_perm_inv[j] if col_perm_inv else j
 
-        outfile.write("$('#redpin').redPin('plotRect',"+str(3+new_j*6)+","+str(255-int(255*(w)))+");") #TODO different color
-        outfile_py.write("BT\t"+str(3+new_j*6)+"\t"+str(255-int(255*(w)))+"\n")
+        if word in b_terms:
+            outfile.write("$('#redpin').redPin('plotRect',"+str(3+new_j*6)+","+str(255-int(255*(w)))+");") #TODO different color
+            outfile_py.write("BT\t"+str(3+new_j*6)+"\t"+str(255-int(255*(w)))+"\n")
+
+    for doc_outlier in domain_outliers:#enumerate(sorted_words):
+#        word=sorted_words[old_j]
+#        #new_j=col_perm_rev[old_j]
+#        w=1. if word in b_terms else 0.
+#        new_j=col_perm_inv[j] if col_perm_inv else j
+
+        outfile.write("$('#redpin').redPin('plotRectHoriz',"+str(3+doc_outlier*6)+","+str(255-int(255*(w)))+");") #TODO different color
+        outfile_py.write("DOCOUT\t"+str(3+doc_outlier*6)+"\n")
 
 
     file=open(prefix+"min_flips_output_7_original_banded_matrix.dat", 'r')

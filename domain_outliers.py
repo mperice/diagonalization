@@ -9,6 +9,8 @@ print "After generate"
 import random
 
 def find_domain_outliers(prefix,document_classes,learner = orange.BayesLearner):
+    document_classes[4]="MAG"
+
     #CREATE ORANGE FILE
     fajl=open(prefix+"temp.dat", 'r')
     orange_fajl=open("temp_orange.tab", 'w')
@@ -76,5 +78,5 @@ def find_domain_outliers(prefix,document_classes,learner = orange.BayesLearner):
                 count_noisy[test_fold] += 1
             # END test_data
         print str(int((test_fold+1)*1.0/k*100))+"/100"
-
+    print noisyIndices
     return noisyIndices
