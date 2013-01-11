@@ -12,8 +12,14 @@ from domains_from_pubmed import abstracts_for_terms
 from domains_from_file import generate_from_files
 from domain_dictionaries import use_domain_dictionary
 import random
+print os.getenv('COMPUTERNAME')
 
-prefix="D:/diagonalization/" if os.getenv('COMPUTERNAME')=="PORFAVOR-PC" else "/home/matic/"
+if os.getenv('COMPUTERNAME')=="PORFAVOR-PC":
+    prefix="D:/diagonalization/"
+elif os.getenv('COMPUTERNAME')=='BOJAN_HP':
+    prefix="W:/diagonalization/"
+else:
+    prefix="/home/matic/"
 
 fetch_documents=True and False
 sell=sys.argv[1]
