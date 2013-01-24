@@ -9,7 +9,7 @@ print "After generate"
 import random
 
 def find_domain_outliers(prefix,document_classes,learner = orange.BayesLearner):
-    document_classes[4]="MAG"
+    #document_classes[4]="MAG"
 
     #CREATE ORANGE FILE
     fajl=open(prefix+"temp.dat", 'r')

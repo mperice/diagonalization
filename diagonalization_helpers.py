@@ -5,7 +5,7 @@ Created on 10. okt. 2012
 '''
 
 
-def write_to_temp_file(trains_class,trains_text,sorted_words,out_file_name="temp.dat",binary=True):
+def write_to_init_file(trains_class,trains_text,sorted_words,out_file_name="init.dat",binary=True):
     out_file = open(out_file_name, "wb")
     for train in trains_class.keys():
         for word in sorted_words:    
@@ -20,7 +20,7 @@ def write_to_temp_file(trains_class,trains_text,sorted_words,out_file_name="temp
         out_file.write("\n")
     out_file.close()
 
-def write_to_temp_file_inv(trains_class,trains_text,sorted_words,out_file_name="temp_inv.dat",binary=True):
+def write_to_init_file_inv(trains_class,trains_text,sorted_words,out_file_name="init_inv.dat",binary=True):
     out_file = open(out_file_name, "wb")
     for word in sorted_words:    
         for train in trains_class.keys():
@@ -32,7 +32,14 @@ def write_to_temp_file_inv(trains_class,trains_text,sorted_words,out_file_name="
     out_file.close()
 
 import os
-def get_permutations(prefix,filename="temp.dat"):
+def identity_permutation(n):
+    d={}
+
+    for i in range(n):
+        d[i]=i
+    return d
+
+def get_permutations(prefix,filename="init.dat"):
         #-----------------CREATE BANDED BINARY MATRIX-----------------
     print "creating banded binary matrix aaa"
     os.chdir(prefix)

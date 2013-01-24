@@ -45,7 +45,7 @@ elif sell=="pdr_rxp":
     classes=["PDR","RXP"]
 elif sell=="whatif":
     prefix+="whatif/"
-    classes=["WHAT-IF","EZOP"]
+    classes=["WHAT-IF","AESOP"]
 elif sell=="fact_aesop":
     prefix+="fact_aesop/"
     classes=["FACT","AESOP"]
@@ -157,18 +157,18 @@ with_inverse=False
 inverse_only=False
 
 if with_inverse:
-    write_to_temp_file_inv(class_per_document,text_per_document,sorted_words,prefix+"temp.dat_inv")
-    write_to_temp_file(class_per_document,text_per_document,sorted_words,prefix+"temp.dat")
-    _,col_perm_rev_inv=get_permutations(prefix,filename=prefix+"temp_inv.dat")
-    col_perm_rev,row_perm_rev=get_permutations(prefix,filename=prefix+"temp.dat")
+    write_to_init_file_inv(class_per_document,text_per_document,sorted_words,prefix+"init.dat_inv")
+    write_to_init_file(class_per_document,text_per_document,sorted_words,prefix+"init.dat")
+    _,col_perm_rev_inv=get_permutations(prefix,filename=prefix+"init_inv.dat")
+    col_perm_rev,row_perm_rev=get_permutations(prefix,filename=prefix+"init.dat")
 elif inverse_only:
     col_perm_rev_inv=False
-    write_to_temp_file_inv(class_per_document,text_per_document,sorted_words,prefix+"temp.dat_inv")
-    col_perm_rev,row_perm_rev=get_permutations(prefix,filename=prefix+"temp_inv.dat")
+    write_to_init_file_inv(class_per_document,text_per_document,sorted_words,prefix+"init.dat_inv")
+    col_perm_rev,row_perm_rev=get_permutations(prefix,filename=prefix+"init_inv.dat")
 else:
     col_perm_rev_inv=False
-    write_to_temp_file(class_per_document,text_per_document,sorted_words,prefix+"temp.dat")
-    col_perm_rev,row_perm_rev=get_permutations(prefix,filename=prefix+"temp.dat")
+    write_to_init_file(class_per_document,text_per_document,sorted_words,prefix+"init.dat")
+    col_perm_rev,row_perm_rev=get_permutations(prefix,filename=prefix+"init.dat")
 
 col_perm={}
 for k,v in col_perm_rev.items():
@@ -179,6 +179,8 @@ if col_perm_rev_inv:
     col_perm_inv={}
     for k,v in col_perm_rev_inv.items():
         col_perm_inv[v]=k
+
+
 
 #-----------------CROSSBEE SCORES-----------------
 from read_hevristic_scores import read_scores_from_file
@@ -218,19 +220,19 @@ print [(word,greens_per_word.get(word),blues_per_word.get(word)) for word in b_t
 print b_term_list
 print b_terms
 
-
 #-----------------DRAW IMAGES-----------------
+draw_matrix(sorted_words,jursic_word_score,max_word_score,identity_permutation(len(col_perm_rev)),identity_permutation(len(row_perm_rev)),class_per_document,
+    prefix+"1_inital","init",[],{},classes)
 draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,
-    prefix+"after_col_perm","min_flips_output_2_columns_permuted_matrix",b_terms,col_perm_inv,classes)
+    prefix+"2_after_col_perm","min_flips_output_2_columns_permuted_matrix",b_terms,col_perm_inv,classes)
 draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,
-    prefix+"banded_matrix","min_flips_output_6_visual_banded_matrix",b_terms,col_perm_inv,classes)
+    prefix+"3_banded_matrix","min_flips_output_6_visual_banded_matrix",b_terms,col_perm_inv,classes)
 draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,
-    prefix+"orig_after_row_perm_with_crossbee_relief","min_flips_output_7_original_banded_matrix",b_terms,col_perm_inv,classes)
+    prefix+"5_after_row_perm","min_flips_output_7_original_banded_matrix",b_terms,col_perm_inv,classes)
 
 #-----------------GENERATE JAVASCRIPT FILE-----------------
 
 doc_outliers=find_domain_outliers(prefix,class_per_document)
-
 generate_js_file(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,text_per_document,prefix,b_terms,greens_per_word,blues_per_word,classes,col_perm_rev_inv,col_perm_inv,doc_outliers)
 
 #-----------------PLOT ROC-----------------
@@ -261,7 +263,7 @@ for word,score in scores[3][:100]:
     fille.write(str(int(score*100)/100.).replace(".",",")+"\t"+word+"\t"+str(greens_per_word[word])+"\t"+str(blues_per_word[word])+"\n")
 fille.close()
 draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,
-    prefix+"final_after_scores_perm","min_flips_output_7_original_banded_matrix",b_terms,best_hevristic_scores_permutation,classes)
+    prefix+"6_after_scores_perm","min_flips_output_7_original_banded_matrix",b_terms,best_hevristic_scores_permutation,classes)
 
 fille=open(prefix+"AUC_scores.txt", "w")
 for i,roc in enumerate(roc_data):
