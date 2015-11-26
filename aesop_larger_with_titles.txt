@@ -1,0 +1,277 @@
+10001	!AESOP	The Thief and the Housedog	A bribe in hand betrays mischief at heart
+10002	!AESOP	The Fox and the Monkey 	A false tale often betrays itself
+10003	!AESOP	The Shipwrecked Impostor	A liar deceives no one but himself
+10004	!AESOP	The Shepherd's Boy 	A liar will not be believed, even when he speaks the truth
+10005	!AESOP	The Fisher and the Little Fish 	A little thing in hand is worth more than a great thing in prospect
+10006	!AESOP	The Ass and His Purchaser	A man is known by the company he keeps
+10007	!AESOP	The Ass and his Purchaser	A man is known by the company he keeps
+10008	!AESOP	The Horse and Groom	A man may smile yet be a villain
+10009	!AESOP	The Fox and the Hedgehog	A needy thief steals more than one who enjoys plenty
+10010	!AESOP	The Ass and His Driver	A willful beast must go his own way
+10011	!AESOP	The Two Frogs	A willful man will have his way to his own hurt
+10012	!AESOP	The Huntsman and the Fisherman	Abstain and enjoy
+10013	!AESOP	Jupiter and the Sharecropper 	Accept that Providence knows what is better for us than we do.
+10014	!AESOP	The Dog in the Manger	Ah, people often grudge others what they cannot enjoy themselves
+10015	!AESOP	The Ass and the Mule	An ounce of prevention is worth a pound of cure-
+10016	!AESOP	The Wolf and the Lamb	Any excuse will serve a tyrant
+10017	!AESOP	The Wolf and the Lamb	Any excuse will serve a tyrant
+10018	!AESOP	The Fox and the Grapes	Any fool can despise what he cannot get
+10019	!AESOP	The Ant and the Chrysalis	Appearances are deceptive
+10020	!AESOP	The Wolf in Sheep's Clothing	Appearances are deceptive
+10021	!AESOP	The Belly and the Members	As in the body, so in the state, each member in his proper sphere must work for the common good
+10022	!AESOP	The Dogs and the Hides 	Attempt not impossibilities
+10023	!AESOP	The Hawk the Kite and the Pigeons	Avoid a remedy that is worse than the disease
+10024	!AESOP	The Peacock and Juno	"Be content with your lot; one cannot be first in everything"
+10025	!AESOP	The Bowman and Lion	Be on guard against men who can strike from a distance
+10026	!AESOP	The Man Bitten by a Dog	Benefits bestowed upon the evil-disposed increase their means of injuring you
+10027	!AESOP	The Wolf, the Nanny-Goat, and The Kid	Better be sure than sorry
+10028	!AESOP	The Town Mouse and the Country Mouse	Better beans and bacon in peace than cakes and ale in fear
+10029	!AESOP	The Horse and the Ass	Better humble security than gilded danger
+10030	!AESOP	The Frogs Desiring a King	Better no rule than cruel rule
+10031	!AESOP	The Fox and the Cat	Better one safe way than a hundred on which you cannot reckon
+10032	!AESOP	The Fir Tree and the Bramble 	Better poverty without care, than riches with
+10033	!AESOP	The Dog and the Wolf	Better starve free than be a fat slave
+10034	!AESOP	The Dog and the Shadow	Beware lest you lose the substance by grasping at the shadow
+10035	!AESOP	The Wolf and the Goat	Beware of a friend with an ulterior motive
+10036	!AESOP	The Donkey and the Lapdog 	Beware, another's talent may not necessarily be yours
+10037	!AESOP	The Farmer and the Stork 	Birds of a feather flock together
+10038	!AESOP	The Raven and the Swan	Change of habit cannot alter Nature
+10039	!AESOP	The Villager and the Serpent 	Charity is a virtue but be careful toward whom There's no point showing it to ingrates who seal their own doom.
+10040	!AESOP	The Two Dogs	Children are not to be blamed for the faults of their parents
+10041	!AESOP	The Ass in the Lion Skin	Clothes may disguise a fool, but his words will give him away
+10042	!AESOP	The Ass and the Lapdog	Clumsy jesting is no joke
+10043	!AESOP	The Crab and the Fox	Contentment with our lot is an element of happiness
+10044	!AESOP	The Boy Bathing	Counsel without help is useless
+10045	!AESOP	The Hares and the Foxes	Count the cost before you commit yourselves
+10046	!AESOP	The Fox the Cock and the Dog	Cunning often outwits itself
+10047	!AESOP	The Swallow and the Other Birds	Destroy the seed of evil, or it will grow up to your ruin
+10048	!AESOP	The Fox Without a Tail	Distrust interested advice
+10049	!AESOP	The Goat and the Goatherd	Do not attempt to hide things which cannot be hid
+10050	!AESOP	The Boy and the Filberts	Do not attempt too much at once
+10051	!AESOP	The Oxen and the Butchers	Do not be in a hurry to change one evil for another
+10052	!AESOP	The Milk Woman and Her Pail 	Do not count your chickens before they are hatched
+10053	!AESOP	The Milkmaid and Her Pail 	Do not count your chickens before they are hatched
+10054	!AESOP	The Fox and the Crow	Do not trust flatterers
+10055	!AESOP	The Eagle and the Fox	Do unto others as you would have them do unto you
+10056	!AESOP	The Fox and the Crane	Do unto others what you would have them do unto you
+10057	!AESOP	The Mountain in Labor	Don't make much ado about nothing
+10058	!AESOP	The Mother and the Wolf	Enemies' promises are made to be broken
+10059	!AESOP	The Nurse and the Wolf	Enemies promises were made to be broken
+10060	!AESOP	The Two Pots 	Equals make the best friends
+10061	!AESOP	The Ass and the Grasshopper 	Even a fool is wise-when it is too late!
+10062	!AESOP	The Lion in Love	Even the wildest can be tamed by love
+10063	!AESOP	The Three Tradesmen	Every man for himself
+10064	!AESOP	The Seagull and the Kite	Every man should be content to mind his own business
+10065	!AESOP	The Little Boy and Fortune	Every one is more or less master of his own fate
+10066	!AESOP	The Thief and the Innkeeper	Every tale is not to be believed
+10067	!AESOP	The Mule	Every truth has two sides
+10068	!AESOP	The Traveler and Fortune 	Everyone is more or less master of his own fate
+10069	!AESOP	The Sick Stag  	Evil companions bring more hurt than profit
+10070	!AESOP	The Blind Man and the Whelp	Evil tendencies are shown in early life
+10071	!AESOP	The Bee and Jupiter	Evil wishes, like chickens, come home to roost
+10072	!AESOP	The Crab and Its Mother	Example is more powerful than precept
+10073	!AESOP	The Two Crabs 	Example is the best precept
+10074	!AESOP	The Swallow and the Crow	Fair weather friends are not worth much
+10075	!AESOP	The Ass the Cock and the Lion	False confidence is the forerunner of misfortune
+10076	!AESOP	The Fox and the Lion	Familiarity breeds contempt
+10077	!AESOP	The Fox and the Lion	Familiarity breeds contempt
+10078	!AESOP	The Ass in the Lion's Skin	Fine clothes may disguise, but silly words will disclose a fool
+10079	!AESOP	The Peacock and the Crane	Fine feathers don't make fine birds
+10080	!AESOP	The Fox and the Crow	Flatters are not to be trusted
+10081	!AESOP	The Sun and the Frogs 	For a poor untutored animal The Frog, I think, reasons fairly well.
+10082	!AESOP	The Camel and the Floating Driftwood	From afar it is something big, and close it is nothing
+10083	!AESOP	The Eagle the Cat and the Wild Sow	Gossips are to be seen and not heard
+10084	!AESOP	The Dog and the Shadow	Grasp at the shadow and lost the substance
+10085	!AESOP	The Wolf and the Crane	Gratitude and greed go not together
+10086	!AESOP	Androcles	Gratitude is the sign of noble souls
+10087	!AESOP	The Rose and the Amaranth	Greatness carries its own penalties
+10088	!AESOP	The Goose With the Golden Eggs	Greed oft o'er reaches itself
+10089	!AESOP	The Lion the Fox and the Ass	Happy is the man who learns from the misfortunes of others
+10090	!AESOP	The Mouse the Frog and the Hawk	Harm hatch, harm catch
+10091	!AESOP	The Wolf in Sheeps Clothing	Harm seek. harm find
+10092	!AESOP	The Sick Lion	He is wise who is warned by the misfortunes of others
+10093	!AESOP	The Heifer and the Ox	He laughs best that laughs last
+10094	!AESOP	The Ass and His Masters	He that finds discontentment in one place is not likely to find happiness in another
+10095	!AESOP	The Hare With Many Friends	He that has many friends, has no friends
+10096	!AESOP	The Bat the Birds and the Beasts	He that is neither one thing nor the other has no friends
+10097	!AESOP	The Boasting Traveler	He who does a thing well does not need to boast
+10098	!AESOP	The Trumpeter Taken Prisoner	He who incites to strife is worse than he who takes part in it
+10099	!AESOP	The Cat and the Mice 	He who is once deceived is doubly cautious
+10100	!AESOP	The Old Woman and the Physician	He who plays a trick must be prepared to take a joke
+10101	!AESOP	The Two Travelers and the Axe	He who shares the danger ought to share the prize
+10102	!AESOP	The Birds the Beasts and the Bat	He winds up friendless who plays both sides against the middle
+10104	!AESOP	Mercury and the Woodman	Honesty is the best policy
+10105	!AESOP	The Eagle and the Arrow	How often do we supply our enemies with the means of our own destruction
+10106	!AESOP	The Old Man and Death	How sorry we would be if many of our wishes were granted
+10107	!AESOP	The Wolf and the Sheep	Hypocritical speeches are easily seen through
+10108	!AESOP	The Farmer and the Cranes	If words suffice not, blows must follow
+10109	!AESOP	The Horse Hunter and Stag	If you allow men to use you for your own purposes, they will use you for theirs
+10110	!AESOP	The Ass and the Old Shepherd	In a change of government the poor change nothing beyond the name of their master
+10111	!AESOP	The Doe and the Lion	In avoiding one evil, care must be taken not to fall into another
+10112	!AESOP	The Ass and His Shadow	In quarreling about the shadow we often lose the substance
+10113	!AESOP	The Wolf and the Crane	In serving the wicked, expect no reward, and be thankful if you escape injury for your pains
+10114	!AESOP	The Kid and the Wolf 	In time of dire need, clever thinking is key. or Outwit your enemy to save your skin
+10115	!AESOP	The Farmer and His Sons	Industry sometimes pays unexpected dividends
+10116	!AESOP	The Man and the Serpent	Injuries may be forgiven, but not forgotten
+10117	!AESOP	The Monkey and the Camel	It is absurd to ape our betters
+10118	!AESOP	The Ant and the Grasshopper 	It is best to prepare for the days of necessity
+10119	!AESOP	The Lion the Fox and the Beasts	It is easier to get into the enemy's toils than out again
+10120	!AESOP	The Wolf and the Kid 	It is easy to be brave from a safe distance
+10121	!AESOP	The Fox and the Grapes	It is easy to despise what you cannot get
+10122	!AESOP	The Dogs and the Fox	It is easy to kick a man that is down
+10123	!AESOP	Belling the Cat 	It is easy to propose impossible remedies
+10124	!AESOP	The Jay and the Peacock	It is not only fine feathers that make fine birds
+10125	!AESOP	The Vain Jackdaw	It is not only fine feathers that make fine birds
+10126	!AESOP	The Ants and the Grasshopper	It is thrifty to prepare today for the wants of tomorrow
+10127	!AESOP	The Wild Boar and the Fox	It is too late to whet the sword when the trumpet sounds
+10128	!AESOP	The Serpent and the File	It is useless attacking the insensible
+10129	!AESOP	The Bat and the Weasels	It is wise to turn circumstances to good account
+10130	!AESOP	The She Goats and Their Beards	It matters little if those who are inferior to us in merit should be like us in outside appearances
+10131	!AESOP	The Bull and the Goat	It shows an evil disposition to take advantage of a friend in distress
+10132	!AESOP	The Lion the Bear and the Fox	It sometimes happens that one man has all the toil, and another all the profit
+10133	!AESOP	The Wind and the Sun	Kindness effects more than severity
+10134	!AESOP	The Frogs Asking for King	Let well enough alone
+10135	!AESOP	The Horse and the Stag	Liberty is too huge a price to pay for revenge
+10136	!AESOP	The Charcoal Burner and the Fuller	Like will draw like
+10137	!AESOP	The Crow and the Pitcher	Little by little does the trick
+10138	!AESOP	The Dove and the Ant	Little friends may prove great friends
+10139	!AESOP	The Lion and the Mouse	Little friends may prove great friends
+10140	!AESOP	The Lion the Mouse and the Fox	Little liberties are great offenses
+10141	!AESOP	The Fox and the Goat	Look before you leap
+10142	!AESOP	The Frogs and the Well 	Look before you leap
+10143	!AESOP	The Lion in Love	Love can tame the wildest
+10144	!AESOP	The Wolf and the Horse	Men of evil reputation, when they perform a good deed, fail to get credit for it
+10145	!AESOP	The Buffoon and the Countryman	Men often applaud an imitation and hiss the real thing
+10146	!AESOP	The Ass and the Frogs	Men often bear little grievances with less courage than they do large misfortunes
+10147	!AESOP	The Wild Ass and the Lion	Might makes right
+10148	!AESOP	The Fox Who Had Lost His Tail	Misery loves company
+10149	!AESOP	The Bear and the Two Travelers 	Misfortune tests the sincerity of friends
+10150	!AESOP	The Oak and the Woodcutters	Misfortunes springing from ourselves are the hardest to bear
+10151	!AESOP	The Mountains in Labour	Much outcry, little outcome
+10152	!AESOP	The Cat and Venus	Nature exceeds nurture
+10153	!AESOP	The Cat-Maiden 	Nature will out
+10154	!AESOP	The Hare and the Hound 	Necessity is our strongest weapon
+10155	!AESOP	The Crow and the Pitcher 	Necessity is the mother of invention
+10156	!AESOP	The Birdcatcher the Partridge and the Cock	Necessity knows no law
+10157	!AESOP	The Tortoise and the Birds	Never soar aloft on an enemy's pinions
+10158	!AESOP	The Two Fellows and the Bear	Never trust a friend who deserts you at a pinch
+10159	!AESOP	The Fox and the Goat	Never trust the advice of a man in difficulties
+10160	!AESOP	The Ass the Fox and the Lion	Never trust your enemy
+10161	!AESOP	The Lion and the Mouse 	No act of kindness, no matter how small, is ever wasted
+10162	!AESOP	The Fawn and His Mother 	No arguments will give courage to the coward
+10163	!AESOP	The Woodman and the Serpent	No gratitude from the wicked
+10164	!AESOP	The Dog and the Hare	No one can be a friend if you know not whether to trust or distrust him
+10165	!AESOP	The Laborer and the Snake	No one truly forgets injuries in the presence of him who caused the injury
+10166	!AESOP	The Dancing Monkeys	Not everything you see is what it appears to be-
+10167	!AESOP	The Hart in the Ox-Stall	Nothing escapes the master's eye
+10168	!AESOP	The Mischievous Dog	Notoriety is often mistaken for fame
+10169	!AESOP	The Tree and the Reed	Obscurity often brings safety
+10170	!AESOP	The Goatherd and the WildGoats	Old friends cannot with impunity be sacrificed for new ones
+10171	!AESOP	The Fox and the Stork 	One bad turn deserves another
+10172	!AESOP	The Ant and the Dove 	One good turn deserves another
+10173	!AESOP	The Serpent and the Eagle	One good turn deserves another
+10174	!AESOP	The Boys and the Frogs	One man's pleasure may be another's pain-
+10175	!AESOP	The Man and the Lion	One story is good, till another is told
+10176	!AESOP	The Sick Lion	Only cowards insult dying majesty
+10177	!AESOP	The Seaside Travelers	Our mere anticipations of life outrun its realities
+10178	!AESOP	The Fox and the Mask 	Outside show is a poor substitute for inner worth
+10179	!AESOP	The North Wind and the Sun	Persuasion is better than Force
+10180	!AESOP	The Quack Frog	Physician, heal thyself!
+10181	!AESOP	The Man the Boy and the Donkey	Please all, and you will please none
+10182	!AESOP	The Flies and the Honey Pot	Pleasure bought with pains, hurts
+10183	!AESOP	The Hare and the Tortoise 	Plodding wins the race
+10184	!AESOP	The Cage Bird and the Bat	Precautions are useless after the crisis
+10185	!AESOP	The Cock and the Pearl 	Precious things are for those that can prize them
+10186	!AESOP	The Fighting Cocks and the Eagle	Pride goes before destruction
+10187	!AESOP	The Vixen and the Lioness	Quality is better than quantity
+10188	!AESOP	The Scorpion and the Ladybug	Regardless of our wishes, or even our intent, it is to our Nature alone that we will be faithful
+10189	!AESOP	The Bald Man and the Fly	Revenge will hurt the avenger-
+10190	!AESOP	The Scorpion and the Frog	"Self destruction - ""Its my Nature"", said the Scorpion..."
+10191	!AESOP	The Frog and the Ox	Self-conceit may lead to self-destruction
+10192	!AESOP	Hercules and the Wagoner	Self-help is the best help
+10193	!AESOP	The Lark and Her Young Ones	Self-help is the best help
+10194	!AESOP	The Peasant and the Apple Tree	Self-interest alone moves some men
+10195	!AESOP	The Horse and the Ass 	Share your neighbour's troubles. If he fails it's on your neck, the load will fall.
+10196	!AESOP	The Hare and the Tortoise	Slow but steady wins the race
+10197	!AESOP	The Wolf and the Shepherds	Some are too apt to condemn in others the very things they do themselves
+10198	!AESOP	The Dog in the Manger	Some begrudge others what they cannot enjoy themselves
+10199	!AESOP	The Gnat and the Bull	Some men are of more consequence in their own eyes than in the eyes of their neighbors
+10200	!AESOP	The Man and the Satyr	Some men can blow hot and blow cold with the same breath
+10201	!AESOP	The Travelers and the Plane Tree	Some men underrate their best blessings
+10202	!AESOP	The Labourer and the Nightingale	Sorrow not over what is lost forever
+10203	!AESOP	The Thief and His Mother	Spare the rod and spoil the child
+10204	!AESOP	The Oak and the Reeds	Stoop to conquer
+10205	!AESOP	The Man and His Wife	Straws show how the wind blows
+10206	!AESOP	Hercules and Pallas	Strife feeds on conflict
+10207	!AESOP	The Monkeys and Their Mother	The best intentions will not always ensure success
+10208	!AESOP	La Besace -- The Alms Bag 	The Creator made us like alms bags all in the same way: Those born long ago and those born today. Our own faults are buried in the rear pouch. The front pouch is reserved for the faults of others.
+10209	!AESOP	The Kites and the Swans	The desire for imaginary benefits often involves the loss of present blessings
+10210	!AESOP	The Wolf the Fox and the Ape	The dishonest, if they act honestly, get no credit
+10211	!AESOP	Hercules and the Waggoner	The gods help them that help themselves
+10212	!AESOP	The Farmer and the Snake  	The greatest kindness will not bind the ungrateful
+10213	!AESOP	The Hunter and the Woodman 	The hero is brave in deeds as well as words
+10214	!AESOP	The Cock and the Jewel	The ignorant despise what is precious only because they cannot understand it
+10215	!AESOP	The Widow and the Sheep	The least outlay is not always the greatest gain
+10216	!AESOP	The Traveler and His Dog	The loiterer often blames delay on his more active friend
+10217	!AESOP	The Old Woman and the Wine Jar 	The memory of a good deed lives
+10218	!AESOP	The Mice and the Weasels	The more honor the more danger
+10219	!AESOP	The Thieves and the Cock	The safeguards of virtue are hateful to those with evil intentions
+10220	!AESOP	The Two Pots	The strong and the weak cannot keep company
+10221	!AESOP	The Miser 	The true value of money is not in its possession but in its use
+10222	!AESOP	The Lioness 	The value is in the worth, not in the number
+10224	!AESOP	The Hares and the Frogs 	There is always someone worse off than yourself
+10225	!AESOP	The Fox and the Woodcutter	There is as much malice in a wink as in a word
+10226	!AESOP	The Shepherds Boy and the Wolf 	There is no believing a liar, even when he speaks the truth
+10227	!AESOP	The Stag in the Ox-Stall	There is no eye like the master's
+10228	!AESOP	The Trees and the Axe	They are foolish who give their enemy the means of destroying them
+10229	!AESOP	The Ass Carrying the Image	They are not wise who give to themselves the credit due to others
+10230	!AESOP	The Dog and the Oyster	They who act without sufficient thought, will often fall into unsuspected danger
+10231	!AESOP	The Crow and the Raven	Those who assume a character which does not belong to them, only make themselves ridiculous
+10232	!AESOP	The Dog and the Cook	Those who enter by the back stairs may expect to be shown out at the window
+10233	!AESOP	The Monkey and the Dolphin	Those who pretend to be what they are not, sooner or later, find themselves in deep water
+10234	!AESOP	The Man and His Two Sweethearts	Those who seek to please everybody please nobody
+10235	!AESOP	The Oxen and the Axle Trees	Those who suffer most cry out the least
+10236	!AESOP	The Bald Knight	Thy pride is but the prologue of thy shame
+10237	!AESOP	The Ass and the Lapdog	To be satisfied with one's lot is better than to desire something which one is not fitted to receive
+10238	!AESOP	The Fisherman Piping	To do the right thing at the right season is a great art
+10239	!AESOP	The Master's Eye 	To see everything, the Master's Eye is best of all, As for me, I would add, so is the Lover's Eye.
+10240	!AESOP	The Fox and the Bramble	To the selfish all are selfish
+10241	!AESOP	The Young Thief and His Mother	"Train up a child in the way he should go; and when he is old he will not depart therefrom"
+10242	!AESOP	The One Eyed Doe	Trouble comes from the direction we least expect it
+10243	!AESOP	The Silkworm and Spider	True art is thoughtful, delights and endures
+10244	!AESOP	A Saying Of Socrates 	True friends are rare
+10245	!AESOP	The Shepherd and the Sea 	Trust not in him that seems a saint
+10246	!AESOP	The Lion and the Eagle 	Try before you trust
+10247	!AESOP	The Miller His Son and Their Ass	Try to please all and you end by pleasing none
+10248	!AESOP	The Stag the Wolf and the Sheep	Two blacks do not make one white
+10249	!AESOP	The Bundle of Sticks	Union gives strength
+10250	!AESOP	The Lion and the Three Bulls	Union is strength
+10251	!AESOP	The Father and His Sons	United we stand, divided we fall
+10252	!AESOP	The Four Oxen and the Lion	United we stand, divided we fall
+10253	!AESOP	The Camel	Use serves to overcome dread
+10254	!AESOP	The Tortoise and the Eagle	Vanity carries its own punishment
+10255	!AESOP	Avaricious and Envious	Vices are their own punishment
+10256	!AESOP	The Lion and the Statue	We can easily represent things as we wish them to be
+10257	!AESOP	The Kings Son and the Painted Lion	We had better bear our troubles bravely than try to escape them
+10258	!AESOP	The Sick Kite	We must make friends in prosperity if we would have their help in adversity
+10259	!AESOP	The Hart and the Hunter	We often despise what is most useful to us
+10260	!AESOP	The Eagle and the Arrow	We often give our enemies the means for our own destruction
+10261	!AESOP	The Stag who Admired his Reflection 	We value what is beautiful and scorn the useful. Yet beauty often destroys us. The stag despised his feet which gave him life, While valuing the crown which caused him strife.
+10262	!AESOP	The Old Man and Death	We would often be sorry if our wishes were gratified
+10263	!AESOP	The Miser and His Gold	Wealth unused might as well not exist
+10264	!AESOP	The Stag at the Pool	What is most truly valuable is often underrated
+10265	!AESOP	The Old Woman and the Wine-Jar	What memories cling 'round the instruments of our pleasure
+10266	!AESOP	The Boy and the Nettles	Whatever you do, do with all your might
+10267	!AESOP	The Aethiop	What's bred in the bone will stick to the flesh
+10268	!AESOP	The Fisher 	When you are in a man's power you must do as he bids you
+10269	!AESOP	The Lost Wig	Wit always has an answer ready
+10270	!AESOP	The Ass's Brains	Wit has always an answer ready
+10271	!AESOP	The Trumpeter Taken Prisoner	Words may be deeds
+10272	!AESOP	The Fly and the Ant 	Work steadily and always plan for lean times
+10273	!AESOP	The Man and His Two Wives	Yield to all and you will soon have nothing to yield
+10274	!AESOP	The One-Eyed Doe	You cannot escape your fate
+10275	!AESOP	The Father and His Two Daughters	You can't please everybody
+10276	!AESOP	The Lion's Share	You may share the labours of the great, but you will not share the spoil
+10277	!AESOP	The Bald Man and the Fly 	You will only injure yourself if you take notice of despicable enemies
+10278	!AESOP	The Lark Burying Her Father	Youth's first duty is reverence to parents
+10279	!AESOP	The Thirsty Pigeon	Zeal should not outrun discretion

@@ -8,14 +8,16 @@ Created on 10. okt. 2012
 def write_to_init_file(trains_class,trains_text,sorted_words,out_file_name="init.dat",binary=True):
     out_file = open(out_file_name, "wb")
     for train in trains_class.keys():
+        set_of_words=set(trains_text[train])
+        #train_nums=[]
         for word in sorted_words:    
             if binary:
-                num = 1 if word in trains_text[train] else 0
+                num = 1 if word in set_of_words else 0
             #else:
                 #if tf_idfs[train].get(word, 0.0)!=0:
                 #    tfnnull+=1
                 #num=1 if tf_idfs[train].get(word, 0.0)/max_tfidf >0.3 else "?"
-
+                #train_nums.append(str(num))
             out_file.write( str(num) + " ")
         out_file.write("\n")
     out_file.close()
@@ -42,8 +44,11 @@ def identity_permutation(n):
 def get_permutations(prefix,filename="init.dat"):
         #-----------------CREATE BANDED BINARY MATRIX-----------------
     print "creating banded binary matrix aaa"
+    old_path=os.getcwd()
     os.chdir(prefix)
-    os.system(("" if os.getenv('COMPUTERNAME')=="PORFAVOR-PC" else "./")+"diag 1 34 1 11 < "+filename)
+    #print os.getcwd(),('C:\Users\matic\workspace\diagonalization/' if os.getenv('COMPUTERNAME')=="PORFAVOR-PC" else "./")+"diag 1 34 1 11 < "+filename
+    os.system(('C:\Users\matic\workspace\diagonalization/' if os.getenv('COMPUTERNAME')=="PORFAVOR-PC" else "./")+"diag 1 34 1 11 < "+filename)
+    os.chdir(old_path)
 
     col_perm_rev={} #permutation of columns      #{0: 151 } na nictem mestu je 151. beseda
     row_perm_rev={} #permutation of rows
@@ -78,7 +83,7 @@ def get_permutations(prefix,filename="init.dat"):
     
     return col_perm_rev,row_perm_rev
 
-import Image, ImageDraw
+from PIL import Image, ImageDraw
 def draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,trains_class,name,filename,b_terms,col_perm_inv,classes):
     red = (255,0,0)
     blue = (0,0,255)
@@ -100,6 +105,27 @@ def draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_p
 
         #draw.point((1,5), fill=blue)
     #print col_perm_inv and sorted(col_perm_inv.keys())
+
+
+
+    #DRAW POINTS
+    file=open(filename+".dat", 'r')
+    line = file.readline()
+
+    i=0
+    while line:
+        orig_i=row_perm_rev[i]
+
+        draw.line(((0,i),(len(col_perm_rev),i)), fill=(255,200,200) if trains_class[orig_i]==classes[0] else (200,200,255))
+
+        for j,value in enumerate(line.split(" ")):
+            if value=="1":
+                new_j=col_perm_inv[j] if col_perm_inv else j
+                draw.point((new_j,i), fill=(red if trains_class[orig_i]==classes[0] else blue))
+        line = file.readline()
+        i+=1
+    file.close()
+
     #DRAW GREEN LINES: B-TERMS
     for j,old_j in col_perm_rev.items():#enumerate(sorted_words):
         word=sorted_words[old_j]
@@ -108,22 +134,6 @@ def draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_p
 
         if word in b_terms:
             draw.line(((new_j,0),(new_j,len(row_perm_rev))), fill=(100,255,100))
-
-    file=open(filename+".dat", 'r')
-    line = file.readline()
-
-    #DRAW POINTS
-    i=0
-    while line:
-        orig_i=row_perm_rev[i]
-        for j,value in enumerate(line.split(" ")):
-            if value=="1":
-                new_j=col_perm_inv[j] if col_perm_inv else j
-
-                draw.point((new_j,i), fill=(red if trains_class[orig_i]==classes[0] else blue))
-        line = file.readline()
-        i+=1
-    file.close()
 
     im.save(name+".png")
     #im.show()

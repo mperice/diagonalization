@@ -1,0 +1,8 @@
+1	A	a a a a a a c c c c c x
+2	A	b b b b b c c c c c y
+3	A	a a a a a b b b b b c c c c c z
+4	A	a a b b b
+5	C	x x x y y y
+6	C	y y y y z z z z z
+7	C	x x x x x x y y z z
+8	C	a a b b b c x x x x y y z

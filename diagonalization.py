@@ -24,9 +24,14 @@ else:
 fetch_documents=True and False
 sell=sys.argv[1]
 #ROW ORDERING
+print sell
+
 if sell=="all":
     prefix+="all/"
     classes=["MIG","MAG"]
+elif sell=="aut_cal":
+    prefix+="aut_calc/"
+    classes=["AUT","CAL"]
 elif sell=="small":
     prefix+="small/"
     classes=["MIG","MAG"]
@@ -44,7 +49,10 @@ elif sell=="pdr_rxp":
     prefix+="pdr_rxp/"
     classes=["PDR","RXP"]
 elif sell=="whatif":
-    prefix+="whatif/"
+    prefix+="whatif_aesop/"
+    classes=["WHAT-IF","AESOP"]
+elif sell=="whatifv2":
+    prefix+="whatif_aesop_v2/"
     classes=["WHAT-IF","AESOP"]
 elif sell=="fact_aesop":
     prefix+="fact_aesop/"
@@ -103,6 +111,7 @@ while line:
 
         #print spl[2],"" in text_per_document[count]
         not_splitted_full_text=fline.split("\n")[0]
+        print not_splitted_full_text
         full_text_per_document[count]=not_splitted_full_text[(not_splitted_full_text.index("\t",not_splitted_full_text.index("\t")+1)+1):]
         #print i,spl[0]
         count+=1
@@ -148,6 +157,10 @@ for train, train_words in text_per_document.items():
         tf_idfs[train][word] = tf * idf
         
 sorted_words = sorted(list(words))
+sw_file=open(prefix+"sorted_words.txt",'w')
+for sw in sorted_words:
+    sw_file.write(sw+"\n")
+sw_file.close()
 nums=0
 tfnnull=0
 max_tfidf=max([item for t in tf_idfs.values() for item in t.values()])
@@ -222,18 +235,18 @@ print b_terms
 
 #-----------------DRAW IMAGES-----------------
 draw_matrix(sorted_words,jursic_word_score,max_word_score,identity_permutation(len(col_perm_rev)),identity_permutation(len(row_perm_rev)),class_per_document,
-    prefix+"1_inital","init",[],{},classes)
+    prefix+"1_inital",prefix+"init",b_terms,{},classes)
 draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,
-    prefix+"2_after_col_perm","min_flips_output_2_columns_permuted_matrix",b_terms,col_perm_inv,classes)
+    prefix+"2_after_col_perm",prefix+"min_flips_output_2_columns_permuted_matrix",b_terms,col_perm_inv,classes)
 draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,
-    prefix+"3_banded_matrix","min_flips_output_6_visual_banded_matrix",b_terms,col_perm_inv,classes)
+    prefix+"3_banded_matrix",prefix+"min_flips_output_6_visual_banded_matrix",b_terms,col_perm_inv,classes)
 draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,
-    prefix+"5_after_row_perm","min_flips_output_7_original_banded_matrix",b_terms,col_perm_inv,classes)
+    prefix+"5_after_row_perm",prefix+"min_flips_output_7_original_banded_matrix",b_terms,col_perm_inv,classes)
 
 #-----------------GENERATE JAVASCRIPT FILE-----------------
 
-doc_outliers=find_domain_outliers(prefix,class_per_document)
-generate_js_file(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,text_per_document,prefix,b_terms,greens_per_word,blues_per_word,classes,col_perm_rev_inv,col_perm_inv,doc_outliers)
+#doc_outliers=find_domain_outliers(prefix,class_per_document)
+#generate_js_file(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,text_per_document,prefix,b_terms,greens_per_word,blues_per_word,classes,col_perm_rev_inv,col_perm_inv,doc_outliers)
 
 #-----------------PLOT ROC-----------------
 print "generate ROC drawing"
@@ -263,7 +276,7 @@ for word,score in scores[3][:100]:
     fille.write(str(int(score*100)/100.).replace(".",",")+"\t"+word+"\t"+str(greens_per_word[word])+"\t"+str(blues_per_word[word])+"\n")
 fille.close()
 draw_matrix(sorted_words,jursic_word_score,max_word_score,col_perm_rev,row_perm_rev,class_per_document,
-    prefix+"6_after_scores_perm","min_flips_output_7_original_banded_matrix",b_terms,best_hevristic_scores_permutation,classes)
+    prefix+"6_after_scores_perm",prefix+"min_flips_output_7_original_banded_matrix",b_terms,best_hevristic_scores_permutation,classes)
 
 fille=open(prefix+"AUC_scores.txt", "w")
 for i,roc in enumerate(roc_data):
@@ -272,13 +285,13 @@ for i,roc in enumerate(roc_data):
 fille.close()
 
 
-if sell in ["whatif","pq_fact","fact_aesop"]:
+if sell in ["whatif","pq_fact","fact_aesop","whatifv2"]:
     fille=open(prefix+"generate_document_combinations_from_domains.txt", "w")
-    for word,score in scores[3][:3]:
+    for word,score in scores[3][:8]:
         for doc_id,klass in class_per_document.items():
-            if klass==classes[0] and word in full_text_per_document[doc_id]:
+            if klass==classes[0] and word in text_per_document[doc_id]:
                 for doc2_id,klass2 in class_per_document.items():
-                    if klass2==classes[1] and word in full_text_per_document[doc2_id]:
+                    if klass2==classes[1] and word in text_per_document[doc2_id]:
                         #print "a",word,"b"
                         fille.write(word+": "+full_text_per_document[doc_id]+" "+full_text_per_document[doc2_id]+"\n")
     fille.close()

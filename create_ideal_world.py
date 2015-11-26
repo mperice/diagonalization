@@ -40,7 +40,8 @@ def generate_ideal(prefix,words_per_doc,term_set_size_per_cluster,percentage=0.0
     words = set()
     for train in trains_text.keys():
         for word in trains_text[train]:
-            words.add(word)
+            if not "_" in word:
+                words.add(word)
             
 
     #domain's term sets
@@ -69,8 +70,11 @@ def generate_ideal(prefix,words_per_doc,term_set_size_per_cluster,percentage=0.0
     for i,cluster_corpus in enumerate(cluster_term_lists):
         for j in range(20):
             selected_connecting_words=[w for w in (connecting_words_first if i%2==1 else connecting_words_second) if random.random()<percentage]
-            print selected_connecting_words
-            docs.append(str(i*20+j+1)+"\t"+(["MIG","MAG"][i%2])+"\t"+string.join(random.sample(cluster_corpus,words_per_doc)+selected_connecting_words," ")+"\n")
+            #print selected_connecting_words
+            documents_text=string.join(random.sample(cluster_corpus,words_per_doc)+selected_connecting_words," ")
+            if i==0 and j==19:
+                print documents_text,selected_connecting_words
+            docs.append(str(i*20+j+1)+"\t"+(["MIG","MAG"][i%2])+"\t"+documents_text+"\n")
 
     out_file = open(prefix+"ideal_toy/documents.lndoc", "wb")
 
